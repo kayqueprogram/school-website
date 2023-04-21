@@ -12,12 +12,12 @@ const Nav = () => {
        <ActiveLink href={"/about"}>About</ActiveLink>
        <ActiveLink href={"/services"}>Serviços</ActiveLink>
        <ActiveLink href={"/equipe"}>Equipe</ActiveLink>
-       <ActiveLink href={"/depoimentos"}>Depoimentos</ActiveLink>
+       
      </NavList>
     </Container>
   )
 }
-
+// <ActiveLink href={"/depoimentos"}>Depoimentos</ActiveLink>
 const Container = styled.div`
 
 `;
