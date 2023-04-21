@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import { Container } from '../shared/styles/styles';
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Carousel from '../shared/components/Carousel';
 
@@ -29,7 +27,7 @@ export default function Home() {
       </Head>
       <div>
         <header>
-         <h1> Carousel</h1>
+         <h1>E.E Omar Donato Bassani</h1>
         </header>
         <Container>
 
