@@ -10,7 +10,7 @@ const Nav = () => {
      <NavList>
        <ActiveLink href={"/"}>Início</ActiveLink>
        <ActiveLink href={"/about"}>About</ActiveLink>
-       <ActiveLink href={"/services"}>Serviços</ActiveLink>
+       <ActiveLink href={"/services"}>Blog</ActiveLink>
        <ActiveLink href={"/equipe"}>Equipe</ActiveLink>
        
      </NavList>

@@ -4,12 +4,21 @@ import styled from 'styled-components'
 const Image = styled.img`
   width: 57px;
   border-radius: 50px;
+  margin: 4px;
+`
+
+const Text = styled.p`
+  font-weight: bold;
+  font-size: 16px;
+  display: inline;
 `
 
 const Logo = () => {
   return (
     <div>
-      <Image src="logo.png" alt="" />
+      
+        <Image src="logo.png" alt="" /> 
+     
     </div>
   )
 }

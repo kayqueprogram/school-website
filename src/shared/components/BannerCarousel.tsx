@@ -66,8 +66,13 @@ const Image = styled.img`
   object-fit: cover;
 
   @media screen and (max-width: 760px) {
-    height: 700px;
+    height: 500px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 300px;
   }
 `;
+
 
 export default BannerCarousel;
