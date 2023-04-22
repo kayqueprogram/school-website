@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import { SwiperSlide } from 'swiper/react';
-import Slide from './Slide';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const images = [
   "https://cdn.discordapp.com/attachments/1098057370728403115/1099085209292525649/IMG-20230421-WA0027.jpg",
@@ -10,30 +11,63 @@ const images = [
 ];
 
 const BannerCarousel = () => {
+  const sliderRef = useRef<Slider>(null);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (sliderRef.current) {
+        const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+        sliderRef.current.slickGoTo(newIndex);
+        setCurrentIndex(newIndex);
+      }
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: false,
+    speed: 1000,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    beforeChange: (current: number, next: number) => setCurrentIndex(next),
+  };
+
   return (
     <Container>
-      <Slide>
-         {
-          images.map((src,index)=><SwiperSlide key={index}><Image src={src} alt="" /></SwiperSlide>)
-         }
-      </Slide>
+      <StyledSlider {...settings} ref={sliderRef}>
+        {images.map((src, index) => (
+          <Image key={index} src={src} alt="" />
+        ))}
+      </StyledSlider>
     </Container>
   )
 }
 
 const Container = styled.div`
- 
+  width: 100%;
+`;
+
+const StyledSlider = styled(Slider)`
+  .slick-slide > div {
+    outline: none;
+  }
 `;
 
 const Image = styled.img`
- width: 100%;
- height: 400px;
- max-height: 900px;
- object-fit: cover;
+  width: 100%;
+  height: 400px;
+  max-height: 900px;
+  object-fit: cover;
 
- @media screen and (max-width: 760px){
-  height: 700px;
- }
+  @media screen and (max-width: 760px) {
+    height: 700px;
+  }
 `;
 
-export default BannerCarousel
+export default BannerCarousel;
