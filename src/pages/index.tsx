@@ -11,6 +11,7 @@ import pageTheme from "@/shared/styles/pageTheme";
 import InfoCard from "@/shared/components/InfoCard";
 import Span from "@/shared/components/Span";
 import PageIcons from "@/shared/utils/PageIcons";
+import BlogCard from "@/shared/components/BlogCard";
 
 export default function Home() {
 
@@ -76,7 +77,7 @@ export default function Home() {
       <SectionContainer
        title="Ùltimos Artigos"
       >
-
+        <BlogCard title='Escola melhora seu ide em 5%' description='ultima avaliação da secretaria de ensino diz que a escola estadual omar...' src='https://imgs.search.brave.com/8s94--53gUoxE-GBnP7acT8gbVQljblDWVbmYeERkzo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9qb29p/bm4uY29tL2ltYWdl/cy9wcmltYXJ5LXNj/aG9vbC1jbGFzc3Jv/b20tNS5qcGc'/>
       </SectionContainer>
 
     </PageLayout>
