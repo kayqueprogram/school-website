@@ -10,6 +10,7 @@ import pageTheme from "@/shared/styles/pageTheme";
 import InfoCard from "@/shared/components/InfoCard";
 import Span from "@/shared/components/Span";
 import PageIcons from "@/shared/utils/PageIcons";
+import BlogCard from "@/shared/components/BlogCard";
 
 export default function Home() {
   return (
@@ -70,8 +71,17 @@ export default function Home() {
           </Column>
         </RowToColumn>
       </SectionContainer>
-      <SectionContainer title="Ùltimos Eventos"></SectionContainer>
-      <SectionContainer title="Ùltimos Artigos"></SectionContainer>
+      <SectionContainer
+       title="Ùltimos Eventos"
+      >
+          
+      </SectionContainer>
+      <SectionContainer
+       title="Ùltimos Artigos"
+      >
+
+      </SectionContainer>
+
     </PageLayout>
   );
 }
