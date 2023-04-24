@@ -8,18 +8,16 @@ const Nav = () => {
   return (
      <NavList>
        <ActiveLink href={"/"}>Início</ActiveLink>
-       <ActiveLink href={"/equipe"}>Sobre nós</ActiveLink>
-       <ActiveLink href={"/about"}>Pages</ActiveLink>
-       <ActiveLink href={"/services"}>Cursos</ActiveLink>
-       <ActiveLink href={"/equipe"}>Eventos</ActiveLink>
-       <ActiveLink href={"/services"}>Blog</ActiveLink>
-       <ActiveLink href={"/equipe"}>Galeria</ActiveLink>
-       <ActiveLink href={"/services"}>Entre em Contato</ActiveLink>
+       <ActiveLink href={"/sobre"}>Sobre nós</ActiveLink>
+       <ActiveLink href={"/cursos"}>Cursos</ActiveLink>
+       <ActiveLink href={"/eventos"}>Eventos</ActiveLink>
+       <ActiveLink href={"/blog"}>Blog</ActiveLink>
+       <ActiveLink href={"/galeria"}>Galeria</ActiveLink>
      </NavList>
   )
 }
 
-// <ActiveLink href={"/about"}>Pages</ActiveLink> só usaremos depois
+
 
 const NavList = styled.ul`
   display: flex;
