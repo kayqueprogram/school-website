@@ -17,8 +17,6 @@ const Logo = () => {
   return (
     <div>
       
-        <Image src="logo.png" alt="" /> 
-     
     </div>
   )
 }

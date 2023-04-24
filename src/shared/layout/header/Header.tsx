@@ -4,30 +4,21 @@ import Logo from '@/shared/components/Logo';
 import WideWrapping from '@/shared/components/WideWrapping';
 import Row from '@/shared/components/Row';
 import Nav from './components/Nav';
+import SearchField from './components/SearchField';
+import TopBar from './components/TopBar';
+import MainBar from './components/MainBar';
 
 
 const Header = () => {
   return (
-    <Container>
-      <WideWrapping>
-        <Row justifyContent='space-between'>
-          <Logo/>
-          <Nav/>
-        </Row>
-      </WideWrapping>
-    </Container>
+    <div>
+      <TopBar/>
+      <MainBar/>
+    </div>
   )
 }
 
-const Container = styled.div`
- position:sticky;
- top:0;
- z-index:1000;
- width:100%;
- padding: 2.4rem 0px;
- box-shadow:0 1px 8px #80808030;
- background-color: white;
-`;
+
 
 
 export default Header;

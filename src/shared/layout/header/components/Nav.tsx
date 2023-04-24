@@ -6,21 +6,17 @@ import ActiveLink from '@/shared/components/ActiveLink';
 const Nav = () => {
 
   return (
-    <Container>
      <NavList>
        <ActiveLink href={"/"}>Início</ActiveLink>
-       <ActiveLink href={"/about"}>About</ActiveLink>
+       <ActiveLink href={"/equipe"}>Sobre nós</ActiveLink>
+       <ActiveLink href={"/about"}>Pages</ActiveLink>
+       <ActiveLink href={"/services"}>Cursos</ActiveLink>
+       <ActiveLink href={"/equipe"}>Eventos</ActiveLink>
        <ActiveLink href={"/services"}>Blog</ActiveLink>
-       <ActiveLink href={"/equipe"}>Equipe</ActiveLink>
-       
      </NavList>
-    </Container>
   )
 }
-// <ActiveLink href={"/depoimentos"}>Depoimentos</ActiveLink>
-const Container = styled.div`
 
-`;
 
 const NavList = styled.ul`
   display: flex;

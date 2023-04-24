@@ -1,78 +1,74 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slide from './Slide';
+import { SwiperSlide } from 'swiper/react';
+import WideWrapping from './WideWrapping';
+import Title from './Title';
+import StylizedButton from './StylizedButton';
+import Paragraph from './Paragraph';
+import Column from './Column';
 
-const images = [
+/*const images = [
   "https://cdn.discordapp.com/attachments/1098057370728403115/1099085209292525649/IMG-20230421-WA0027.jpg",
   "https://cdn.discordapp.com/attachments/1098057370728403115/1099085209556746300/IMG-20230421-WA0028.jpg",
   "https://cdn.discordapp.com/attachments/1098057370728403115/1099085384249507882/IMG-20230421-WA0030.jpg"
-];
+];*/
+
+const images = [
+  'https://img.freepik.com/fotos-gratis/grupo-diverso-de-estudantes-caminhando-na-escola_53876-46937.jpg?w=1060&t=st=1682339963~exp=1682340563~hmac=790a5e6960d07554019ff0f8ca2c0995120ffbd0f25971cdbf732c84881d80f0'
+]
 
 const BannerCarousel = () => {
-  const sliderRef = useRef<Slider>(null);
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (sliderRef.current) {
-        const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-        sliderRef.current.slickGoTo(newIndex);
-        setCurrentIndex(newIndex);
-      }
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
-  const settings = {
-    dots: false,
-    arrows: false,
-    infinite: true,
-    autoplay: false,
-    speed: 1000,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    beforeChange: (current: number, next: number) => setCurrentIndex(next),
-  };
-
-  return (
-    <Container>
-      <StyledSlider {...settings} ref={sliderRef}>
-        {images.map((src, index) => (
-          <Image key={index} src={src} alt="" />
-        ))}
-      </StyledSlider>
-    </Container>
+  return(
+   <Slide>
+     {
+      images.map((src,index)=>(
+        <SwiperSlide>
+          <Banner>
+            <BannerImage src={src} alt="" />
+            <WideWrapping>
+               <TextField>
+                  <Column gap='18px'>
+                   <Title isLightColor={true}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, delectus.</Title>
+                   <Paragraph>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid distinctio, reiciendis nesciunt ipsam beatae quibusdam velit! Accusamus vel at suscipit repellat nam necessitatibus nostrum temporibus.
+                   </Paragraph>
+                   <StylizedButton>
+                     Saiba Mais
+                   </StylizedButton>
+                 </Column>
+               </TextField>
+            </WideWrapping>
+          </Banner>
+        </SwiperSlide>
+      ))
+     }
+   </Slide>
   )
 }
 
-const Container = styled.div`
-  width: 100%;
+const Banner = styled.div`
+ position: relative;
+ display: flex;
+ align-items: center;
+ height: 60rem;
+ background-color: #0000006e;
 `;
 
-const StyledSlider = styled(Slider)`
-  .slick-slide > div {
-    outline: none;
-  }
-`;
-
-const Image = styled.img`
+const BannerImage = styled.img`
+  position: absolute;
+  z-index: -1;
   width: 100%;
-  height: 400px;
-  max-height: 900px;
+  height: 100%;
   object-fit: cover;
 
-  @media screen and (max-width: 760px) {
-    height: 500px;
-  }
+`;
 
-  @media screen and (max-width: 480px) {
-    height: 300px;
-  }
+const TextField = styled.div`
+  max-width: 600px;
+  color: white;
 `;
 
 
-export default BannerCarousel;
+
+export default BannerCarousel

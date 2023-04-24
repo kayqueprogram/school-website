@@ -25,7 +25,8 @@ type PropsStyle = {
 const Container = styled(Link)<PropsStyle>`
  text-decoration: none;
  font-weight: 600;
- color: ${({isActive,theme})=> isActive?theme.colors.details.primary:theme.colors.text.secondaryTextColor};
+ color: ${({isActive,theme})=> isActive?theme.colors.details.primary:theme.colors.text.secondary.dark};
+ cursor: pointer;
 `;
 
 export default ActiveLink

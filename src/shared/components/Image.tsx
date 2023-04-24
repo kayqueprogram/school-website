@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Footer = () => {
+const Image = () => {
   return (
     <Container>
       
@@ -9,8 +9,8 @@ const Footer = () => {
   )
 }
 
-const Container = styled.div`
- 
+const Container = styled.img`
+  
 `;
 
-export default Footer;
+export default Image

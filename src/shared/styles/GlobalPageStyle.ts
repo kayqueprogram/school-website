@@ -19,7 +19,7 @@ const GlobalPageStyle = createGlobalStyle`
 
  @media ${device.md}{
   html{
-    font-size: 48%;
+    font-size: 40%;
   }
  }
 
