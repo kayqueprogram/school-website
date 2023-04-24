@@ -22,7 +22,7 @@ export default function Home() {
           <Column>
             <Column>
               <Title>
-                Personal Education, Extraordinary Success
+                Educação Transforma
               </Title>
               <Paragraph>
                Bem-vindo à Escola Omar Donato Bassani, um lugar onde os alunos prosperam academicamente, pessoalmente e socialmente. Nossa escola se dedica a fornecer um ambiente inclusivo e de apoio que capacita os alunos a perseguir suas paixões e alcançar seus objetivos.
@@ -43,9 +43,9 @@ export default function Home() {
           </div>
            <Column color={pageTheme.colors.text.secondary.light} gap="4rem">
              <div>
-               <Title isLightColor={true}>Why Choose Us</Title>
+               <Title isLightColor={true}>Porque escolher-nos</Title>
                <Span>
-                  Let success motivate you. Find a picture of what epitomizes success to you and then pull it out when you are in need of motivation.
+                   Em nossa escola, oferecemos uma ampla gama de cursos, incluindo Colocação Avançada e programas vocacionais, para atender às diversas necessidades e interesses de nossos alunos.
                 </Span>
              </div>
               <div>

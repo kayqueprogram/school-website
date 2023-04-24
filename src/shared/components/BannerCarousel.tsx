@@ -20,30 +20,24 @@ const images = [
 
 const BannerCarousel = () => {
   return(
-   <Slide>
-     {
-      images.map((src,index)=>(
-        <SwiperSlide>
-          <Banner>
-            <BannerImage src={src} alt="" />
-            <WideWrapping>
-               <TextField>
-                  <Column gap='18px'>
-                   <Title isLightColor={true}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, delectus.</Title>
-                   <Paragraph>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid distinctio, reiciendis nesciunt ipsam beatae quibusdam velit! Accusamus vel at suscipit repellat nam necessitatibus nostrum temporibus.
-                   </Paragraph>
-                   <StylizedButton>
-                     Saiba Mais
-                   </StylizedButton>
-                 </Column>
-               </TextField>
-            </WideWrapping>
-          </Banner>
-        </SwiperSlide>
-      ))
-     }
-   </Slide>
+    <Banner>
+      <BannerImage src={images[0]} alt="banner" />
+      <WideWrapping>
+       <TextField>
+          <Column gap='18px'>
+           <Title isLightColor={true}>
+            Fortalecendo Mentes, Inspirando Futuros
+           </Title>
+           <Paragraph>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid distinctio, reiciendis nesciunt ipsam beatae quibusdam velit! Accusamus vel at suscipit repellat nam necessitatibus nostrum temporibus.
+           </Paragraph>
+           <StylizedButton>
+             Saiba Mais
+           </StylizedButton>
+         </Column>
+       </TextField>
+    </WideWrapping>
+  </Banner>
   )
 }
 
