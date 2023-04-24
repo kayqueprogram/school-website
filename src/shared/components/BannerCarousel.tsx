@@ -8,16 +8,16 @@ import StylizedButton from './StylizedButton';
 import Paragraph from './Paragraph';
 import Column from './Column';
 
-/*const images = [
+const images = [
   "https://cdn.discordapp.com/attachments/1098057370728403115/1099085209292525649/IMG-20230421-WA0027.jpg",
   "https://cdn.discordapp.com/attachments/1098057370728403115/1099085209556746300/IMG-20230421-WA0028.jpg",
   "https://cdn.discordapp.com/attachments/1098057370728403115/1099085384249507882/IMG-20230421-WA0030.jpg"
-];*/
-
+];
+/*
 const images = [
   'https://img.freepik.com/fotos-gratis/grupo-diverso-de-estudantes-caminhando-na-escola_53876-46937.jpg?w=1060&t=st=1682339963~exp=1682340563~hmac=790a5e6960d07554019ff0f8ca2c0995120ffbd0f25971cdbf732c84881d80f0'
 ]
-
+*/
 const BannerCarousel = () => {
   return(
     <Banner>

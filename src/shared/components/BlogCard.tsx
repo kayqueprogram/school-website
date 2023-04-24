@@ -21,6 +21,7 @@ const Card = styled.div`
     border-radius: 5px;
     background-color: ${({theme})=>theme.colors.details.primary};
     color: white;
+    &:hover: scale(1.1);
 `
 
 const Image = styled.img`
