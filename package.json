@@ -16,10 +16,12 @@
     "@types/react-slick": "^0.23.10",
     "@types/swiper": "^6.0.0",
     "babel-plugin-styled-components": "^2.1.1",
+    "firebase": "^9.20.0",
     "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-paginate": "^8.2.0",
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
@@ -28,6 +30,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@types/react-paginate": "^7.1.1",
     "@types/styled-components": "^5.1.26"
   }
 }

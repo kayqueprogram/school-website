@@ -4,7 +4,8 @@ import styled from 'styled-components';
 type Props = {
     children:React.ReactNode,
     fontSize?:string,
-    fontWeight?:string
+    fontWeight?:number | string,
+    color?:string
 }
 
 const Span = ({children,...styleProps}:Props) => {
@@ -18,7 +19,7 @@ const Span = ({children,...styleProps}:Props) => {
 const Container = styled.span<Omit<Props,'children'>>`
  font-size: ${({fontSize})=>fontSize || '1em'};
  font-weight: ${({fontWeight})=>fontWeight || 'normal'};
- color: currentColor;
+ color:${({color})=>color|| 'currentColor'};
 `;
 
 export default Span;

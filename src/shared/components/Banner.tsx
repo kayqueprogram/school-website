@@ -18,9 +18,9 @@ const images = [
   'https://img.freepik.com/fotos-gratis/grupo-diverso-de-estudantes-caminhando-na-escola_53876-46937.jpg?w=1060&t=st=1682339963~exp=1682340563~hmac=790a5e6960d07554019ff0f8ca2c0995120ffbd0f25971cdbf732c84881d80f0'
 ]
 
-const BannerCarousel = () => {
+const Banner = () => {
   return(
-    <Banner>
+    <Container>
       <BannerImage src={images[0]} alt="banner" />
       <WideWrapping>
        <TextField>
@@ -37,11 +37,11 @@ const BannerCarousel = () => {
          </Column>
        </TextField>
     </WideWrapping>
-  </Banner>
+  </Container>
   )
 }
 
-const Banner = styled.div`
+const Container = styled.div`
  position: relative;
  display: flex;
  align-items: center;
@@ -65,4 +65,4 @@ const TextField = styled.div`
 
 
 
-export default BannerCarousel
+export default Banner

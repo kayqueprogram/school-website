@@ -16,8 +16,8 @@ const pageTheme = {
      }
     },
     measures:{
-      border_radius:'20px',
-      max_wide_wrapping_width:'1280px'
+      border_radius:'4px',
+      max_wide_wrapping_width:'1300px'
     },
   };
 
