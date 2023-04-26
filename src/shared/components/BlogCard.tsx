@@ -10,14 +10,13 @@ import pageTheme from '../styles/pageTheme';
 type Props = {
     title:string,
     description:string,
-    src:string,
     href:string
 }
 
 const BlogCard = ({title,description,href}:Props) => {
   return (
     <Container>
-      <LinkContainer href="/">
+      <LinkContainer href={href}>
         <Column>
          <Image src='https://s30383.pcdn.co/wp-content/uploads/2020/12/topic-faculty-active-engaged-students-1.png'/>
          {title && <Span fontSize='1.8rem' fontWeight={600} color={pageTheme.colors.details.primary}>{title}</Span>}

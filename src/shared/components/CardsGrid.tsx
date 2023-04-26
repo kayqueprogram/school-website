@@ -9,37 +9,37 @@ const CardsGrid = () => {
         <BlogCard
           title='A taxa de inadimplência de empréstimos estudantis é importante'
           description='Tomar a decisão de fazer algo – este é o primeiro passo. Nós todos sabemos que nada decisão.'
-          src=''
+          href='/'
         />
                 <BlogCard
           title='A taxa de inadimplência de empréstimos estudantis é importante'
           description='Tomar a decisão de fazer algo – este é o primeiro passo. Nós todos sabemos que nada decisão.'
-          src=''
+          href='/'
         />
                 <BlogCard
           title='A taxa de inadimplência de empréstimos estudantis é importante'
           description='Tomar a decisão de fazer algo – este é o primeiro passo. Nós todos sabemos que nada decisão.'
-          src=''
+          href='/'
         />
                 <BlogCard
           title='A taxa de inadimplência de empréstimos estudantis é importante'
           description='Tomar a decisão de fazer algo – este é o primeiro passo. Nós todos sabemos que nada decisão.'
-          src=''
+          href='/'
         />
                 <BlogCard
           title='A taxa de inadimplência de empréstimos estudantis é importante'
           description='Tomar a decisão de fazer algo – este é o primeiro passo. Nós todos sabemos que nada decisão.'
-          src=''
+          href='/'
         />
                 <BlogCard
           title='A taxa de inadimplência de empréstimos estudantis é importante'
           description='Tomar a decisão de fazer algo – este é o primeiro passo. Nós todos sabemos que nada decisão.'
-          src=''
+          href='/'
         />
                 <BlogCard
           title='A taxa de inadimplência de empréstimos estudantis é importante'
           description='Tomar a decisão de fazer algo – este é o primeiro passo. Nós todos sabemos que nada decisão.'
-          src=''
+          href='/'
         />
       </Grid>
     </div>
