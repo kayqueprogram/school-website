@@ -12,6 +12,7 @@ import Span from "@/shared/components/Span";
 import PageIcons from "@/shared/utils/PageIcons";
 import Posts from "@/shared/components/Posts";
 import ResponsiveImg from "@/shared/components/ResponsiveImg";
+import Footer from '@shared/layout/footer/Footer'
 
 export default function Home() {
 
@@ -81,6 +82,7 @@ export default function Home() {
       >
           <Posts/>
       </SectionContainer>
+      <Footer />
     </PageLayout>
   );
 }
