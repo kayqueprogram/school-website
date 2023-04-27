@@ -4,11 +4,11 @@ import BlogCard from './BlogCard';
 import { db } from '../../../firebase/firebase-config';
 import Slide from './Slide';
 import { SwiperSlide } from 'swiper/react';
-
+import { TProps } from './BlogCard';
 
 
 const Posts = () => {
-    const [posts,setPosts] = useState<Array<{}>>([]);
+    const [posts,setPosts] = useState<Array<TProps>>([]);
     const postsCollectionRef = collection(db,"posts");
     
     
@@ -16,6 +16,7 @@ const Posts = () => {
     useEffect(()=>{
         const fetch = async() =>{    
            const data = (await getDocs(postsCollectionRef));
+           console.log('data bellow');
            setPosts(data.docs?.map((doc)=> ({...doc.data(),id:doc.id})))
         }
 

@@ -8,14 +8,15 @@ import Link from 'next/link';
 import pageTheme from '../styles/pageTheme';
 import wordSplit from '../utils/wordSplit';
 
-type Props = {
-    id:string
-    title:string,
-    content:string,
-    image:string,
+export type TProps = {
+    id?:string
+    title?:string,
+    content?:string,
+    image?:string,
+    author?:string
 }
 
-const BlogCard = ({image,title,content,id}:Props) => {
+const BlogCard = ({image,title,content,id}:TProps) => {
   return (
     <Container>
       <LinkContainer href={"/blog/"+id}>
