@@ -13,7 +13,6 @@ type Props = {
     title:string,
     content:string,
     image:string,
-    href:string
 }
 
 const BlogCard = ({image,title,content,id}:Props) => {
