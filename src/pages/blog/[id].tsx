@@ -60,10 +60,10 @@ const Post = () => {
   return (
     <PageLayout>
        {
-        post && (
+        post?.title && (
          <>
           <Banner
-           src={post.image}
+           src={post?.image}
           />
           <SectionContainer>
           <Column>
