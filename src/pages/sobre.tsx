@@ -1,5 +1,6 @@
-import BannerCarousel from "@/shared/components/Banner";
+import Banner from "@/shared/components/Banner";
 import Paragraph from "@/shared/components/Paragraph";
+import ResponsiveImg from "@/shared/components/ResponsiveImg";
 import RowToColumn from "@/shared/components/RowToColumn";
 import SectionContainer from "@/shared/components/SectionContainer";
 import PageLayout from "@/shared/layout/PageLayout";
@@ -8,7 +9,9 @@ import React from "react";
 const About = () => {
   return (
     <PageLayout>
-      <BannerCarousel />
+      <Banner
+       src="https://www.ulisboa.pt/sites/ulisboa.pt/files/styles/rect_large/public/basicpage/images/1920_600_estudantes_internacionais_0.jpg?itok=AANpGOEn"
+      />
        <SectionContainer>
        <RowToColumn>
        <Paragraph>
@@ -22,7 +25,7 @@ const About = () => {
 
          Convidamos você a explorar nosso site para saber mais sobre nossa escola e os programas que oferecemos. Caso tenha alguma dúvida ou pretenda agendar uma visita, não hesite em contactar-nos. Estamos ansiosos para fazer parceria com você para ajudar seu filho a alcançar o sucesso acadêmico e pessoal!
          </Paragraph>
-         <div></div>
+         <ResponsiveImg src="logo.png"/>
       </RowToColumn>
        </SectionContainer>
     </PageLayout>

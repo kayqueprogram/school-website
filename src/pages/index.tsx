@@ -11,6 +11,7 @@ import InfoCard from "@/shared/components/InfoCard";
 import Span from "@/shared/components/Span";
 import PageIcons from "@/shared/utils/PageIcons";
 import Posts from "@/shared/components/Posts";
+import ResponsiveImg from "@/shared/components/ResponsiveImg";
 
 export default function Home() {
 
@@ -19,13 +20,10 @@ export default function Home() {
       <Banner 
        src="https://images.pexels.com/photos/5538594/pexels-photo-5538594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
        title="Fortalecendo Mentes, Inspirando Futuros"
-       info=""
-       btnLabel=""
-       linkPath=""
+       info="A educação é a base do progresso da sociedade. Ele equipa os indivíduos com as habilidades e conhecimentos necessários para ter sucesso em suas vidas pessoais e profissionais e contribuir para a melhoria de suas comunidades."
       />
       <SectionContainer>
         <RowToColumn>
-          <Column>
             <Column>
               <Title>Educação Transforma</Title>
               <Paragraph>
@@ -43,12 +41,12 @@ export default function Home() {
                 em um mundo em rápida mudança.
               </Paragraph>
             </Column>
-          </Column>
+            <ResponsiveImg src="logo.png"/>
         </RowToColumn>
       </SectionContainer>
       <SectionContainer backgroundColor={pageTheme.colors.details.primary.dark}>
         <RowToColumn>
-          <div></div>
+          <ResponsiveImg src="student.jpg"/>
           <Column color={pageTheme.colors.text.secondary.light} gap="4rem">
             <div>
               <Title isLightColor={true}>Porque escolher-nos</Title>

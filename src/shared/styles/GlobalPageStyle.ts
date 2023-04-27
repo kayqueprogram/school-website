@@ -23,6 +23,12 @@ const GlobalPageStyle = createGlobalStyle`
   }
  }
 
+ @media ${device.xs}{
+  html{
+    font-size: 36%;
+  }
+  }
+
 `;
 
 export default GlobalPageStyle;

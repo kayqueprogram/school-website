@@ -17,8 +17,9 @@ const Slide = ({children,swiperConfigs}:ISwiperProps) => {
   return (
     <>
       <Swiper
-       slidesPerView={4}//add auto aq e adc width 100% no swiper
+       slidesPerView={2}//add auto aq e adc width 100% no swiper
        spaceBetween={30}
+      
       >
         {children}
       </Swiper>
