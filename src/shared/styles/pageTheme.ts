@@ -1,8 +1,12 @@
 const pageTheme = {
     colors:{
       details:{
-        primary:'#000052',
-        secondary:'red'
+        primary:{
+          dark:'#000052'
+        },
+        secondary:{
+          dark:'red'
+        }
       },
       text:{
         primary:{
@@ -10,7 +14,7 @@ const pageTheme = {
           light:'white'
         },
         secondary:{
-          dark:'#1a2844',
+          dark:'black',
           light:'white'
         }
      }

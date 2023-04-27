@@ -9,8 +9,6 @@ const Nav = () => {
      <NavList>
        <ActiveLink href={"/"}>Início</ActiveLink>
        <ActiveLink href={"/sobre"}>Sobre nós</ActiveLink>
-       <ActiveLink href={"/cursos"}>Cursos</ActiveLink>
-       <ActiveLink href={"/eventos"}>Eventos</ActiveLink>
        <ActiveLink href={"/blog"}>Blog</ActiveLink>
        <ActiveLink href={"/galeria"}>Galeria</ActiveLink>
      </NavList>

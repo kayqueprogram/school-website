@@ -1,23 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import Span from './Span'
 
-const Image = styled.img`
-  width: 57px;
-  border-radius: 50px;
-  margin: 4px;
-`
-
-const Text = styled.p`
-  font-weight: bold;
-  font-size: 16px;
-  display: inline;
-`
 
 const Logo = () => {
   return (
-    <div>
-      
-    </div>
+    <Span fontWeight='bold'>
+      Omar Donato Bassani
+    </Span>
   )
 }
 

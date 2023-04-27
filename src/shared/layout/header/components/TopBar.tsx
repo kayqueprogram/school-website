@@ -34,7 +34,7 @@ const TopBar = () => {
 
 const Container = styled.div`
   padding: 14px;
-  background-color:${({theme})=> theme.colors.details.primary};
+  background-color:${({theme})=> theme.colors.details.primary.dark};
   color: white;
   font-size: 14px;
 `;

@@ -13,16 +13,12 @@ interface ISwiperProps {
 
 }
 
-/// não usei uma props como images = [{...}] 
-// me manda te mandar um audio explicando o motivo se estiver lendo 
-// provavelmente n vou lembrar de mandar o audio então se estiver lendo 
-// me lembre :)
-
 const Slide = ({children,swiperConfigs}:ISwiperProps) => {
   return (
     <>
       <Swiper
-       {...swiperConfigs}
+       slidesPerView={4}//add auto aq e adc width 100% no swiper
+       spaceBetween={30}
       >
         {children}
       </Swiper>

@@ -41,8 +41,9 @@ const SectionContainer = ({children,title,subTitle,topic,isRelative,backgroundCo
 }
 
 const Container = styled.section<{backgroundColor?:string,isRelative?:boolean}>`
+ width: 100%;
  position: ${({isRelative})=>isRelative?'relative':'static'};
- padding: 8.5rem 0px;
+ padding: 6rem 0px;
  background-color: ${({backgroundColor})=>backgroundColor || 'transparent'};
 `;
 

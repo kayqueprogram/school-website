@@ -1,10 +1,9 @@
 import Row from '@/shared/components/Row';
 import WideWrapping from '@/shared/components/WideWrapping';
-import { Logo } from '@/shared/styles/Header';
 import React from 'react';
 import styled from 'styled-components';
 import Nav from './Nav';
-import SearchField from './SearchField';
+import Logo from '@/shared/components/Logo';
 
 
 const MainBar = () => {
@@ -14,7 +13,6 @@ const MainBar = () => {
         <Row justifyContent='space-between' alignItems='center'>
            <Logo/>
            <Nav/>
-           <SearchField/>
         </Row>
       </WideWrapping>
     </Container>
@@ -22,7 +20,7 @@ const MainBar = () => {
 }
 
 const Container = styled.div`
- padding: 1.6rem;
+ padding: 2.6rem 0rem;
 `;
 
 export default MainBar

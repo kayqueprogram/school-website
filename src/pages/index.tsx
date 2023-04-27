@@ -10,12 +10,19 @@ import pageTheme from "@/shared/styles/pageTheme";
 import InfoCard from "@/shared/components/InfoCard";
 import Span from "@/shared/components/Span";
 import PageIcons from "@/shared/utils/PageIcons";
-import BlogCard from "@/shared/components/BlogCard";
+import Posts from "@/shared/components/Posts";
 
 export default function Home() {
+
   return (
     <PageLayout>
-      <Banner />
+      <Banner 
+       src="https://images.pexels.com/photos/5538594/pexels-photo-5538594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+       title="Fortalecendo Mentes, Inspirando Futuros"
+       info=""
+       btnLabel=""
+       linkPath=""
+      />
       <SectionContainer>
         <RowToColumn>
           <Column>
@@ -39,7 +46,7 @@ export default function Home() {
           </Column>
         </RowToColumn>
       </SectionContainer>
-      <SectionContainer backgroundColor={pageTheme.colors.details.primary}>
+      <SectionContainer backgroundColor={pageTheme.colors.details.primary.dark}>
         <RowToColumn>
           <div></div>
           <Column color={pageTheme.colors.text.secondary.light} gap="4rem">
@@ -74,14 +81,8 @@ export default function Home() {
       <SectionContainer
        title="Ùltimos Eventos"
       >
-          
+          <Posts/>
       </SectionContainer>
-      <SectionContainer
-       title="Ùltimos Artigos"
-      >
-
-      </SectionContainer>
-
     </PageLayout>
   );
 }
