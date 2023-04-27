@@ -12,7 +12,7 @@ import Span from "@/shared/components/Span";
 import PageIcons from "@/shared/utils/PageIcons";
 import Posts from "@/shared/components/Posts";
 import ResponsiveImg from "@/shared/components/ResponsiveImg";
-import Footer from '@shared/layout/footer/Footer'
+import Footer from '@/shared/layout/footer/Footer'
 
 export default function Home() {
 
@@ -68,11 +68,7 @@ export default function Home() {
                 title="Ambiente de suporte e inclusivo:"
                 info="Um ambiente escolar de suporte e inclusivo é crucial para que os alunos prosperem academicamente, pessoalmente e socialmente."
               />
-              <InfoCard
-                Icon={PageIcons.Sport}
-                title="Oportunidades extracurriculares:"
-                info="A educação vai além da sala de aula, e nossa escola está empenhada em oferecer uma ampla gama de oportunidades extracurriculares para ajudar os alunos a desenvolver habilidades"
-              />
+
             </div>
           </Column>
         </RowToColumn>
@@ -82,7 +78,7 @@ export default function Home() {
       >
           <Posts/>
       </SectionContainer>
-      <Footer />
+      
     </PageLayout>
   );
 }
