@@ -15,8 +15,8 @@ const Title = ({children,...styleProps}:Props) => {
 }
 
 const Container = styled.h1<Omit<Props,'children'>>`
-  font-size: 4rem;
-  color: ${({theme,isLightColor})=>isLightColor?theme.colors.text.primary.light:''};
+  font-size: 3rem;
+  color: ${({theme,isLightColor})=>isLightColor?theme.colors.text.primary.light:'currentColor'};
 `;
 
 export default Title

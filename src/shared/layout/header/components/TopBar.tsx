@@ -5,6 +5,7 @@ import PageIcons from '@/shared/utils/PageIcons';
 import WideWrapping from '@/shared/components/WideWrapping';
 import Span from '@/shared/components/Span';
 
+
 const TopBar = () => {
   return (
     <Container>
@@ -33,10 +34,11 @@ const TopBar = () => {
 }
 
 const Container = styled.div`
-  padding: 14px;
+  padding: 1.4rem;
   background-color:${({theme})=> theme.colors.details.primary.dark};
   color: white;
-  font-size: 14px;
+  font-size: 1.4rem;
+
 `;
 
 export default TopBar
