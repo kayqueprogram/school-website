@@ -21,7 +21,7 @@ export default function Home() {
       <Banner 
        src="https://images.pexels.com/photos/5538594/pexels-photo-5538594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
        title="Fortalecendo Mentes, Inspirando Futuros"
-       info="A educação é a base do progresso da sociedade. Ele equipa os indivíduos com as habilidades e conhecimentos necessários para ter sucesso em suas vidas pessoais e profissionais e contribuir para a melhoria de suas comunidades."
+       info="A educação é a base do progresso da sociedade. Ele equipa os indivíduos com as habilidades e conhecimentos necessários, para ter sucesso em sua vida pessoal e profissional, contribuindo assim com a melhoria para sua comunidade."
       />
       <SectionContainer>
         <RowToColumn>
@@ -31,7 +31,7 @@ export default function Home() {
                 Bem-vindo à Escola Omar Donato Bassani, um lugar onde os alunos
                 prosperam academicamente, pessoalmente e socialmente. Nossa
                 escola se dedica a fornecer um ambiente inclusivo e de apoio que
-                capacita os alunos a perseguir suas paixões e alcançar seus
+                capacita os alunos a perseguir seus projetos e alcançar seus
                 objetivos.
               </Paragraph>
               <Paragraph>
@@ -39,7 +39,7 @@ export default function Home() {
                 prepara os alunos para o sucesso na faculdade e além. Nosso
                 currículo é projetado para desafiar os alunos, fornecendo-lhes
                 as habilidades e conhecimentos de que precisam para se destacar
-                em um mundo em rápida mudança.
+                em um mundo de grandes transformações.
               </Paragraph>
             </Column>
             <ResponsiveImg src="logo.png"/>
@@ -51,11 +51,6 @@ export default function Home() {
           <Column color={pageTheme.colors.text.secondary.light} gap="4rem">
             <div>
               <Title isLightColor={true}>Porque escolher-nos</Title>
-              <Span>
-                Em nossa escola, oferecemos uma ampla gama de cursos, incluindo
-                Colocação Avançada e programas vocacionais, para atender às
-                diversas necessidades e interesses de nossos alunos.
-              </Span>
             </div>
             <div>
               <InfoCard
