@@ -14,17 +14,17 @@ const TopBar = () => {
          <Row gap='1.6rem'>
           <Row alignItems='center'>
              <PageIcons.Email fontSize='1.1em'/>
-             <Span>Email: emailHere</Span>
+             <Span>Email: coordenacaobassani2022@gmail.com</Span>
           </Row>
           <Row alignItems='center'>
              <PageIcons.Phone fontSize='1.1em'/>
-             <Span>Telefone: telefoneHere</Span>
+             <Span>Telefone: +55 11 4354-7192</Span>
           </Row>
          </Row>
          <Row gap='1.6rem'>
           <Row alignItems='center'>
              <PageIcons.Time fontSize='1.1em'/>
-             <Span>Abre: 8:00am - 19:00pm</Span>
+             <Span>Abre: 6:50am - 22:00pm</Span>
           </Row>
          </Row>
        </Row>
