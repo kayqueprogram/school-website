@@ -62,9 +62,13 @@ const Post = () => {
        {
         post?.title && (
          <>
-          <Banner
-           src={post?.image}
-          />
+          {
+            post?.image && (
+              <Banner
+               src={post.image}
+              />
+            )
+          }
           <SectionContainer>
           <Column>
            <Span>Omar Donato Bassani</Span>

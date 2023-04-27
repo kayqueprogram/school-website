@@ -10,7 +10,7 @@ import { device } from '../styles/breakPoints';
 
 
 type Props = {
-  src:string,
+  src?:string,
   title?:string,
   info?:string,
 }
