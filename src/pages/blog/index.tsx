@@ -2,7 +2,6 @@ import React from 'react';
 import PageLayout from '@/shared/layout/PageLayout';
 import Banner from '@/shared/components/Banner';
 import SectionContainer from '@/shared/components/SectionContainer';
-import CardsGrid from '@/shared/components/CardsGrid';
 import Posts from '@/shared/components/Posts';
 
 
