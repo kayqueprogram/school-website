@@ -21,7 +21,7 @@ export default function Home() {
       <Banner 
        src="https://images.pexels.com/photos/5538594/pexels-photo-5538594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
        title="Fortalecendo Mentes, Inspirando Futuros"
-       info="A educação é a base do progresso da sociedade. Ele equipa os indivíduos com as habilidades e conhecimentos necessários, para ter sucesso em sua vida pessoal e profissional, contribuindo assim com a melhoria para sua comunidade."
+       info="A educação é a base do progresso da sociedade. Ele equipa os indivíduos com as habilidades e conhecimentos necessários, para ter sucesso em sua vida pessoal e profissional, contribuindo assim com melhoria para sua comunidade."
       />
       <SectionContainer>
         <RowToColumn>
