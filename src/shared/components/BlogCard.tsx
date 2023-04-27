@@ -11,15 +11,23 @@ import wordSplit from '../utils/wordSplit';
 type Props = {
     id:string
     title:string,
+<<<<<<< HEAD
     content:string,
     image:string,
+=======
+    description:string,
+>>>>>>> 31c84b5fb26c975976aa676c2c21d786eeb197d0
     href:string
 }
 
 const BlogCard = ({image,title,content,id}:Props) => {
   return (
     <Container>
+<<<<<<< HEAD
       <LinkContainer href={"/blog/"+id}>
+=======
+      <LinkContainer href={href}>
+>>>>>>> 31c84b5fb26c975976aa676c2c21d786eeb197d0
         <Column>
          <Image src={image}/>
          {title && <Span fontSize='1.6rem' fontWeight={600} color={pageTheme.colors.details.primary.dark}>{wordSplit(title,8)}...</Span>}
