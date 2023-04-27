@@ -13,7 +13,7 @@ const Container = styled.div`
  width: 100%;
  max-width: ${({theme})=> theme.measures.max_wide_wrapping_width};
  margin: auto;
- padding: 0px 30px;
+ padding: 0px 3rem;
 `;
 
 export default WideWrapping

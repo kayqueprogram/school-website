@@ -59,6 +59,32 @@ const Post = () => {
 
   return (
     <PageLayout>
+       {
+        post && (
+         <>
+          <Banner
+           src={post.image}
+          />
+          <SectionContainer>
+          <Column>
+           <Span>Omar Donato Bassani</Span>
+           <Title>{post.title}</Title>
+           <Paragraph>
+             {post.content}
+           </Paragraph>
+          </Column>
+         </SectionContainer>
+         
+         </>
+        )
+      }
+    </PageLayout>
+  )
+}
+
+
+/*
+  <PageLayout>
       {
         post && (
          <SectionContainer>
@@ -76,8 +102,8 @@ const Post = () => {
         )
       }
     </PageLayout>
-  )
-}
 
+
+*/
 
 export default Post;

@@ -4,6 +4,7 @@ import Row from '@/shared/components/Row';
 import PageIcons from '@/shared/utils/PageIcons';
 import WideWrapping from '@/shared/components/WideWrapping';
 import Span from '@/shared/components/Span';
+import { device } from '@/shared/styles/breakPoints';
 
 
 const TopBar = () => {
@@ -38,6 +39,10 @@ const Container = styled.div`
   background-color:${({theme})=> theme.colors.details.primary.dark};
   color: white;
   font-size: 1.4rem;
+
+  @media ${device.xs}{
+    font-size: 1rem;
+  }
 
 `;
 

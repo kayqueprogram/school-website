@@ -4,7 +4,6 @@ import Logo from '@/shared/components/Logo';
 import WideWrapping from '@/shared/components/WideWrapping';
 import Row from '@/shared/components/Row';
 import Nav from './components/Nav';
-import SearchField from './components/SearchField';
 import TopBar from './components/TopBar';
 import MainBar from './components/MainBar';
 

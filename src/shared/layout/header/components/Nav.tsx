@@ -19,10 +19,10 @@ const Nav = () => {
 
 const NavList = styled.ul`
   display: flex;
-  font-size: 1.68rem;
+  font-size: 1.4rem;
 
  &>*:not(:first-child){
-  margin-left: 5rem;
+  margin-left: 3rem;
  }
 `;
 

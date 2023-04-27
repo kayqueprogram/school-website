@@ -25,7 +25,7 @@ const GlobalPageStyle = createGlobalStyle`
 
  @media ${device.xs}{
   html{
-    font-size: 36%;
+    font-size: 38%;
   }
   }
 
