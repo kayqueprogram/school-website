@@ -10,8 +10,16 @@ import Column from '@/shared/components/Column';
 import Span from '@/shared/components/Span';
 import Paragraph from '@/shared/components/Paragraph';
 
+type TPost  = {
+  author:string,
+  content:string,
+  image:string,
+  title:string,
+  date:string
+}
+
 const Post = () => {
-  const [post,setPost] = useState({})
+  const [post,setPost] = useState<TPost>()
   const router = useRouter();
   const id:any = router.query.id;
   const _id:string = typeof id === 'string'?id:'';
@@ -71,27 +79,5 @@ const Post = () => {
   )
 }
 
-/*
-  if(id){
-      const docRef = doc(db, "posts", id);
-      getDoc(docRef)
-      .then((doc) => {
-        if (doc.exists()) {
-          const data = doc.data();
-          setPost({
-            title: data.title,
-            content: data.content,
-            date: data.date,
-            image: data.image,
-            author: data.author
-          });
-        } else {
-          console.log("Documento não encontrado!");
-        }
-      })
-      .catch((error) => {
-        console.log("Erro ao obter o documento:", error);
-      });
-*/
 
 export default Post;
