@@ -11,7 +11,8 @@ const Post = () => {
   const [post,setPost] = useState({})
   const router = useRouter();
   const { id } = router.query;
-
+ 
+  console.log(id)
 
 
 
