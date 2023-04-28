@@ -9,6 +9,7 @@ import Title from '@/shared/components/Title';
 import Column from '@/shared/components/Column';
 import Span from '@/shared/components/Span';
 import Paragraph from '@/shared/components/Paragraph';
+import { breakStr } from '@/shared/utils/breakStr';
 
 type TPost  = {
   author:string,
@@ -69,14 +70,14 @@ const Post = () => {
               />
             )
           }
-          <SectionContainer>
-          <Column>
-           <Span>Omar Donato Bassani</Span>
-           <Title>{post.title}</Title>
-           <Paragraph>
-             {post.content}
-           </Paragraph>
-          </Column>
+          <SectionContainer
+          title={post.title}
+          >
+            <Column>
+            {
+              breakStr(post.content)?.map(post => <Paragraph>{post}</Paragraph>)
+            }
+            </Column>
          </SectionContainer>
          
          </>

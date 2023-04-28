@@ -6,7 +6,7 @@ const GlobalPageStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
  }
 
  html{
@@ -15,6 +15,11 @@ const GlobalPageStyle = createGlobalStyle`
 
  body{
    font-size: 1.6rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: currentColor;
   }
 
  @media ${device.md}{

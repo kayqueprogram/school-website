@@ -4,7 +4,6 @@ import styled from 'styled-components';
 type Props = {
   children:React.ReactNode;
   alignItems?:'stretch'|'flex-start'|'flex-end'|'baseline'|'center';
-  color?:string
   gap?:string;
 }
 
@@ -21,7 +20,7 @@ const Container = styled.div<Omit<Props,'children'>>`
   display: flex;
   flex-direction: column;
   align-items:${({alignItems})=>alignItems || 'flex-start'};
-  color: ${({color})=>color?color:'currentColor'};
+  color: currentColor;
 
   &>*:not(:first-child){
     margin-top:${({gap})=>gap || '1rem'};

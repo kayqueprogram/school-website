@@ -11,6 +11,7 @@ const ResponsiveImg = ({src}:{src:string}) => {
 const Container = styled.img<{src:string}>`
  max-width: 100%;
  max-height:55rem;
+ border-radius:${({theme})=>theme.measures.border_radius};
  object-fit: cover;
 `;
 

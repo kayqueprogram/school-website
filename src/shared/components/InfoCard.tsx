@@ -5,6 +5,7 @@ import Row from './Row';
 import Column from './Column';
 import Span from './Span';
 import { title } from 'process';
+import Paragraph from './Paragraph';
 
 type Props = {
   Icon:IconType,
@@ -16,8 +17,8 @@ const InfoCard = ({Icon,title,info}:Props) => {
   return (
     <Container>
       <Row alignItems='center' gap='3rem'>
-        {Icon && <Icon fontSize='5.8em'/>}
-        <Column>
+        {Icon && <Icon fontSize='4em'/>}
+        <Column gap='2px'>
           {title && (
            <Span fontSize='2rem' fontWeight='600'>
             {title}
@@ -25,9 +26,9 @@ const InfoCard = ({Icon,title,info}:Props) => {
           }
           {
             info && (
-              <Span fontSize='1.4rem'>
+              <Paragraph>
                 {info}
-              </Span>
+              </Paragraph>
             )
           }
         </Column>

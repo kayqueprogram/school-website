@@ -13,9 +13,11 @@ type Props = {
   src?:string,
   title?:string,
   info?:string,
+  buttonLink?:string
+  buttonLabel?:string
 }
 
-const Banner = ({src,title,info}:Props) => {
+const Banner = ({src,title,info,buttonLink,buttonLabel}:Props) => {
   return(
     <Container>
       <BannerImage src={src} alt="banner" />
@@ -28,6 +30,13 @@ const Banner = ({src,title,info}:Props) => {
            <Paragraph>
              {info}
            </Paragraph>
+           {
+            (buttonLink && buttonLabel) && (
+              <StylizedButton href={buttonLink}>
+                {buttonLabel}
+              </StylizedButton>
+            )
+           }
          </Column>
        </TextField>
     </WideWrapping>
@@ -39,11 +48,11 @@ const Container = styled.div`
  position: relative;
  display: flex;
  align-items: center;
- height: 55rem;
- background-color: #0000006e;
+ min-height: 60rem;
+ background-color:${({theme})=>theme.colors.details.primary.littleOpacity};
 
  @media ${device.md} {
-  height:30rem;
+  min-height:30rem;
  }
 `;
 
@@ -58,7 +67,9 @@ const BannerImage = styled.img`
 
 const TextField = styled.div`
   max-width: 600px;
+  padding: 20px 0px;
   color: white;
+
 `;
 
 

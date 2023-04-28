@@ -2,10 +2,12 @@ const pageTheme = {
     colors:{
       details:{
         primary:{
-          dark:'#000052'
+          dark:'#1a2844',
+          light:'#071A94',
+          littleOpacity:'#1a2844cc'
         },
         secondary:{
-          dark:'red'
+          dark:'#f60'
         }
       },
       text:{
@@ -21,7 +23,7 @@ const pageTheme = {
     },
     measures:{
       border_radius:'4px',
-      max_wide_wrapping_width:'1300px'
+      max_wide_wrapping_width:'1280px'
     },
   };
 

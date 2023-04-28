@@ -12,7 +12,9 @@ const About = () => {
       <Banner
        src="https://www.ulisboa.pt/sites/ulisboa.pt/files/styles/rect_large/public/basicpage/images/1920_600_estudantes_internacionais_0.jpg?itok=AANpGOEn"
       />
-       <SectionContainer>
+       <SectionContainer
+        title="Omar Donato Bassani" 
+       >
        <RowToColumn>
        <Paragraph>
          Bem-vindo à Escola Omar Donato Bassani! Somos uma instituição educacional de primeira linha que se esforça para fornecer uma experiência educacional completa e enriquecedora aos nossos alunos. Nossa escola leva o nome de Omar Donato Bassani, um distinto educador com mais de duas décadas de experiência no campo da educação.

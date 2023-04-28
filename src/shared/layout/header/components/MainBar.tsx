@@ -20,7 +20,11 @@ const MainBar = () => {
 }
 
 const Container = styled.div`
- padding: 2.6rem 0rem;
+ position: sticky;
+ top: 0px;
+ padding: 3rem 0rem;
+ background-color: ${({theme})=>theme.colors.details.primary.dark};
+ color: ${({theme})=>theme.colors.text.secondary.light};
 `;
 
 export default MainBar

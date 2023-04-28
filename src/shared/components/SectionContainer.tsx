@@ -10,14 +10,14 @@ type Props = {
   children: React.ReactNode;
   title?:string;
   subTitle?:string;
-  topic?:string;
+  color?:string;
   backgroundColor?:string;
   isRelative?:boolean;
 }
 
-const SectionContainer = ({children,title,subTitle,topic,isRelative,backgroundColor}:Props) => {
+const SectionContainer = ({children,title,subTitle,isRelative,color,backgroundColor}:Props) => {
   return (
-    <Container backgroundColor={backgroundColor} isRelative={isRelative}>
+    <Container backgroundColor={backgroundColor} isRelative={isRelative} color={color}>
       <WideWrapping>
         {
           title && (
@@ -40,10 +40,11 @@ const SectionContainer = ({children,title,subTitle,topic,isRelative,backgroundCo
   )
 }
 
-const Container = styled.section<{backgroundColor?:string,isRelative?:boolean}>`
+const Container = styled.section<{backgroundColor?:string,isRelative?:boolean,color?:string}>`
  width: 100%;
  position: ${({isRelative})=>isRelative?'relative':'static'};
  padding: 6rem 0px;
+ color:${({color})=>color || 'currentColor'};
  background-color: ${({backgroundColor})=>backgroundColor || 'transparent'};
 `;
 

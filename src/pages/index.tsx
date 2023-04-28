@@ -22,8 +22,11 @@ export default function Home() {
        src="https://images.pexels.com/photos/5538594/pexels-photo-5538594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
        title="Fortalecendo Mentes, Inspirando Futuros"
        info="A educação é a base do progresso da sociedade. Ele equipa os indivíduos com as habilidades e conhecimentos necessários, para ter sucesso em sua vida pessoal e profissional, contribuindo assim com melhoria para sua comunidade."
-      />
-      <SectionContainer>
+       buttonLink="/"
+       buttonLabel="Saiba Mais"
+     />
+      <SectionContainer
+      >
         <RowToColumn>
             <Column>
               <Title>Educação Transforma</Title>
@@ -45,18 +48,21 @@ export default function Home() {
             <ResponsiveImg src="logo.png"/>
         </RowToColumn>
       </SectionContainer>
-      <SectionContainer backgroundColor={pageTheme.colors.details.primary.dark}>
+      <SectionContainer 
+       backgroundColor={pageTheme.colors.details.primary.dark}
+       color={pageTheme.colors.text.secondary.light}
+       >
         <RowToColumn>
           <ResponsiveImg src="student.jpg"/>
-          <Column color={pageTheme.colors.text.secondary.light} gap="4rem">
+          <Column gap="4rem">
             <div>
-              <Title isLightColor={true}>Porque escolher-nos</Title>
+              <Title>Porque escolher-nos</Title>
             </div>
             <div>
               <InfoCard
                 Icon={PageIcons.Brain}
                 title="Forte Programa Acadêmico:"
-                info="Programa acadêmico rigoroso e abrangente é um componente essencial de qualquer grande escola. Um programa acadêmico forte é aquele que desafia os alunos ao mesmo tempo em que lhes fornece as habilidades e o conhecimento de que precisam para ter sucesso na faculdade e além."
+                info="Programa acadêmico rigoroso e abrangente é um componente essencial de qualquer grande escola."
               />
               <InfoCard
                 Icon={PageIcons.Smart}
@@ -73,7 +79,6 @@ export default function Home() {
       >
           <Posts/>
       </SectionContainer>
-      
     </PageLayout>
   );
 }

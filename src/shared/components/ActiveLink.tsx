@@ -26,7 +26,7 @@ const Container = styled(Link)<PropsStyle>`
  text-decoration: none;
  text-align: center;
  font-weight: 600;
- color: ${({isActive,theme})=> isActive?theme.colors.details.secondary.dark:theme.colors.text.secondary.dark};
+ color: ${({isActive,theme})=> isActive?theme.colors.details.secondary.dark:'currentColor'};
  cursor: pointer;
 `;
 
